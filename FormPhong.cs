@@ -62,6 +62,7 @@ namespace QLKhachSanVui
             DataGridViewRow row = gvp.SelectedRows[0];            
             txtMaphong.Text = row.Cells["Mã phòng"].Value.ToString();
         }
+
         private void LoadDataLoaiPhong()
         {
             SqlCommand cmd = new SqlCommand("DSLoaiPhong", DataBase.GetConnection());
@@ -72,6 +73,5 @@ namespace QLKhachSanVui
             gvlp.DataSource = tb;
             gvlp.ClearSelection();
         }
-
     }
 }
