@@ -6,3 +6,6 @@ E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhach
 E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.Cache
 E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+C:\Users\Administrator\Desktop\QLKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+C:\Users\Administrator\Desktop\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+C:\Users\Administrator\Desktop\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb

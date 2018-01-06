@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace QuanLyKhachSan
 {
-    public partial class FormLogin : Form
+    public partial class FormMain : Form
     {
-        public FormLogin()
+        public FormMain()
         {
             InitializeComponent();
+        }
+
+
+        private void lblUser_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
