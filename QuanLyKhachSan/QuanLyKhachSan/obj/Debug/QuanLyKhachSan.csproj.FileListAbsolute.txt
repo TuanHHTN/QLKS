@@ -1,0 +1,8 @@
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojResolveAssemblyReference.cache
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.Cache
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+E:\CONG CU & MOI TRUONG PTPM\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
