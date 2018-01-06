@@ -1,0 +1,11 @@
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\bin\Debug\qlkhachsan.exe.config
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\bin\Debug\qlkhachsan.exe
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\bin\Debug\qlkhachsan.pdb
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\bin\Debug\qlkhachsan.xml
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\obj\Debug\qlkhachsan.vbprojResolveAssemblyReference.cache
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\obj\Debug\qlkhachsan.Form1.resources
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\obj\Debug\qlkhachsan.Resources.resources
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\obj\Debug\qlkhachsan.vbproj.GenerateResource.Cache
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\obj\Debug\qlkhachsan.exe
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\obj\Debug\qlkhachsan.xml
+C:\Users\thanh\Desktop\QLKS\qlkhachsan\qlkhachsan\obj\Debug\qlkhachsan.pdb
