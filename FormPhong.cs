@@ -72,6 +72,6 @@ namespace QLKhachSanVui
             adapter.Fill(tb);
             gvlp.DataSource = tb;
             gvlp.ClearSelection();
-        }
+        } //DataLoaiPhong
     }
 }
