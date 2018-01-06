@@ -16,5 +16,11 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+
+
+        private void lblUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
