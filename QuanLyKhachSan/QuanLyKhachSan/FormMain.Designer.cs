@@ -350,6 +350,7 @@
             this.mnDatphong.Name = "mnDatphong";
             this.mnDatphong.Size = new System.Drawing.Size(154, 22);
             this.mnDatphong.Text = "Đặt phòng";
+            this.mnDatphong.Click += new System.EventHandler(this.mnDatphong_Click);
             // 
             // mnThuephong
             // 
