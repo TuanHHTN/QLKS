@@ -43,7 +43,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label3.ForeColor = System.Drawing.Color.Blue;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(135, 54);
+            this.label3.Location = new System.Drawing.Point(120, 33);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 33);
@@ -53,8 +53,8 @@
             // btnExit
             // 
             this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExit.Location = new System.Drawing.Point(55, 201);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Location = new System.Drawing.Point(39, 176);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(119, 34);
             this.btnExit.TabIndex = 14;
@@ -64,8 +64,8 @@
             // btnLogin
             // 
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(256, 201);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Location = new System.Drawing.Point(240, 176);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(119, 34);
             this.btnLogin.TabIndex = 13;
@@ -74,8 +74,8 @@
             // 
             // txtmatKhau
             // 
-            this.txtmatKhau.Location = new System.Drawing.Point(187, 162);
-            this.txtmatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmatKhau.Location = new System.Drawing.Point(171, 137);
+            this.txtmatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtmatKhau.Name = "txtmatKhau";
             this.txtmatKhau.PasswordChar = '♥';
             this.txtmatKhau.Size = new System.Drawing.Size(187, 20);
@@ -85,7 +85,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(51, 166);
+            this.label2.Location = new System.Drawing.Point(35, 141);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
@@ -94,8 +94,8 @@
             // 
             // txttenDangnhap
             // 
-            this.txttenDangnhap.Location = new System.Drawing.Point(187, 122);
-            this.txttenDangnhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttenDangnhap.Location = new System.Drawing.Point(171, 97);
+            this.txttenDangnhap.Margin = new System.Windows.Forms.Padding(4);
             this.txttenDangnhap.Name = "txttenDangnhap";
             this.txttenDangnhap.Size = new System.Drawing.Size(187, 20);
             this.txttenDangnhap.TabIndex = 10;
@@ -104,7 +104,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(51, 125);
+            this.label1.Location = new System.Drawing.Point(35, 100);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
