@@ -12,9 +12,32 @@ namespace QuanLyKhachSan
 {
     public partial class FormThuePhong : Form
     {
+
         public FormThuePhong()
         {
             InitializeComponent();
+        }
+
+        public FormMain frmMain;
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormThuePhong_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

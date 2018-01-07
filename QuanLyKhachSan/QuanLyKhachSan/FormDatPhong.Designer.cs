@@ -28,39 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("KHÁCH HÀNG", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ĐẶT PHÒNG", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("KHÁCH HÀNG", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("ĐẶT PHÒNG", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem67 = new System.Windows.Forms.ListViewItem(new string[] {
             "Mã khách hàng",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem68 = new System.Windows.Forms.ListViewItem(new string[] {
             "Tên khách hàng",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem69 = new System.Windows.Forms.ListViewItem(new string[] {
             "Giới tính",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem70 = new System.Windows.Forms.ListViewItem(new string[] {
             "Ngày sinh",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem71 = new System.Windows.Forms.ListViewItem(new string[] {
             "CMND/Passport",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem72 = new System.Windows.Forms.ListViewItem(new string[] {
             "Địa chỉ",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem73 = new System.Windows.Forms.ListViewItem(new string[] {
             "Điện thoại",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem74 = new System.Windows.Forms.ListViewItem(new string[] {
             "Ngày đến",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem75 = new System.Windows.Forms.ListViewItem(new string[] {
             "Ngày đi",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem76 = new System.Windows.Forms.ListViewItem(new string[] {
             "Số người",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem77 = new System.Windows.Forms.ListViewItem(new string[] {
             "Tiền cọc",
             ""}, -1);
             this.button7 = new System.Windows.Forms.Button();
@@ -209,6 +209,7 @@
             this.btnDatphong.TabIndex = 5;
             this.btnDatphong.Text = "Đặt phòng";
             this.btnDatphong.UseVisualStyleBackColor = true;
+            this.btnDatphong.Click += new System.EventHandler(this.btnDatphong_Click);
             // 
             // btnSua
             // 
@@ -219,6 +220,7 @@
             this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // button2
             // 
@@ -229,6 +231,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Tìm";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -257,47 +260,47 @@
             this.gt});
             this.lsvChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvChiTiet.FullRowSelect = true;
-            listViewGroup3.Header = "KHÁCH HÀNG";
-            listViewGroup3.Name = "listViewGroupKHACHHANG";
-            listViewGroup4.Header = "ĐẶT PHÒNG";
-            listViewGroup4.Name = "listViewGroupDATPHONG";
+            listViewGroup13.Header = "KHÁCH HÀNG";
+            listViewGroup13.Name = "listViewGroupKHACHHANG";
+            listViewGroup14.Header = "ĐẶT PHÒNG";
+            listViewGroup14.Name = "listViewGroupDATPHONG";
             this.lsvChiTiet.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup3,
-            listViewGroup4});
+            listViewGroup13,
+            listViewGroup14});
             this.lsvChiTiet.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            listViewItem12.Group = listViewGroup3;
-            listViewItem13.Group = listViewGroup3;
-            listViewItem13.StateImageIndex = 0;
-            listViewItem14.Group = listViewGroup3;
-            listViewItem14.StateImageIndex = 0;
-            listViewItem15.Group = listViewGroup3;
-            listViewItem15.StateImageIndex = 0;
-            listViewItem16.Group = listViewGroup3;
-            listViewItem16.StateImageIndex = 0;
-            listViewItem17.Group = listViewGroup3;
-            listViewItem17.StateImageIndex = 0;
-            listViewItem18.Group = listViewGroup3;
-            listViewItem18.StateImageIndex = 0;
-            listViewItem19.Group = listViewGroup4;
-            listViewItem19.StateImageIndex = 0;
-            listViewItem20.Group = listViewGroup4;
-            listViewItem20.StateImageIndex = 0;
-            listViewItem21.Group = listViewGroup4;
-            listViewItem21.StateImageIndex = 0;
-            listViewItem22.Group = listViewGroup4;
-            listViewItem22.StateImageIndex = 0;
+            listViewItem67.Group = listViewGroup13;
+            listViewItem68.Group = listViewGroup13;
+            listViewItem68.StateImageIndex = 0;
+            listViewItem69.Group = listViewGroup13;
+            listViewItem69.StateImageIndex = 0;
+            listViewItem70.Group = listViewGroup13;
+            listViewItem70.StateImageIndex = 0;
+            listViewItem71.Group = listViewGroup13;
+            listViewItem71.StateImageIndex = 0;
+            listViewItem72.Group = listViewGroup13;
+            listViewItem72.StateImageIndex = 0;
+            listViewItem73.Group = listViewGroup13;
+            listViewItem73.StateImageIndex = 0;
+            listViewItem74.Group = listViewGroup14;
+            listViewItem74.StateImageIndex = 0;
+            listViewItem75.Group = listViewGroup14;
+            listViewItem75.StateImageIndex = 0;
+            listViewItem76.Group = listViewGroup14;
+            listViewItem76.StateImageIndex = 0;
+            listViewItem77.Group = listViewGroup14;
+            listViewItem77.StateImageIndex = 0;
             this.lsvChiTiet.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem12,
-            listViewItem13,
-            listViewItem14,
-            listViewItem15,
-            listViewItem16,
-            listViewItem17,
-            listViewItem18,
-            listViewItem19,
-            listViewItem20,
-            listViewItem21,
-            listViewItem22});
+            listViewItem67,
+            listViewItem68,
+            listViewItem69,
+            listViewItem70,
+            listViewItem71,
+            listViewItem72,
+            listViewItem73,
+            listViewItem74,
+            listViewItem75,
+            listViewItem76,
+            listViewItem77});
             this.lsvChiTiet.Location = new System.Drawing.Point(0, 6);
             this.lsvChiTiet.MultiSelect = false;
             this.lsvChiTiet.Name = "lsvChiTiet";
@@ -335,6 +338,7 @@
             this.button6.TabIndex = 2;
             this.button6.Text = "Nhận phòng";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // lvdp
             // 
@@ -427,6 +431,7 @@
             this.btnHuy.TabIndex = 3;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // tabPage2
             // 

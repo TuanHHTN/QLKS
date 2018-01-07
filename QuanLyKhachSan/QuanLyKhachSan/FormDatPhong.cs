@@ -61,6 +61,16 @@ namespace QuanLyKhachSan
             gvDatPhong.ClearSelection();
         }
 
+        private void gvTimPhong_SelectionChanged(object sender, EventArgs e)
+        {
+            ChonPhong();
+        }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+            LoadDataKh();
+        }
+
         private void ChonPhong()
         {
             lvdp.Items.Clear();
@@ -147,32 +157,120 @@ namespace QuanLyKhachSan
             adapter.Fill(dataset);
             LoadCTKH();
         }
-        public void LoadCTKH()
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            string makh = cbkh.SelectedValue.ToString();
-            txtSonguoi.Clear();
-            txtTiencoc.Clear();
-            lsvChiTiet.Items[7].SubItems[1].Text = dateTimePicker1.Value.ToShortDateString();
-            lsvChiTiet.Items[8].SubItems[1].Text = dateTimePicker2.Value.ToShortDateString();
-            lsvChiTiet.Items[9].SubItems[1].Text = "";
-            lsvChiTiet.Items[10].SubItems[1].Text = "";
-            SqlCommand cmd = new SqlCommand("TimKH", DataBase.GetConnection());
+
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }   
+
+        private void btnDatphong_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("DatPhong", DataBase.GetConnection());
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@makh", makh);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            if (dt.Rows.Count > 0)
+            if (txtmapd.Text != "" && txtSonguoi.Text != "")
             {
-                lsvChiTiet.Items[0].SubItems[1].Text = dt.Rows[0]["makh"].ToString();
-                lsvChiTiet.Items[1].SubItems[1].Text = dt.Rows[0]["tenkh"].ToString();
-                lsvChiTiet.Items[2].SubItems[1].Text = dt.Rows[0]["gioitinh"].ToString();
-                lsvChiTiet.Items[3].SubItems[1].Text = dt.Rows[0]["ngaysinh"].ToString();
-                lsvChiTiet.Items[4].SubItems[1].Text = dt.Rows[0]["cmnd"].ToString();
-                lsvChiTiet.Items[5].SubItems[1].Text = dt.Rows[0]["diachi"].ToString();
-                lsvChiTiet.Items[6].SubItems[1].Text = dt.Rows[0]["sdt"].ToString();
+                cmd.Parameters.AddWithValue("@mapd", txtmapd.Text);
+                cmd.Parameters.AddWithValue("@makh", cbkh.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@ngayden", dateTimePicker1.Value.ToShortDateString());
+                cmd.Parameters.AddWithValue("@ngaydi", dateTimePicker2.Value.ToShortDateString());
+                cmd.Parameters.AddWithValue("@sotiendat", txtTiencoc.Text);
+                cmd.Parameters.AddWithValue("@tinhtrang", "chờ");
+                cmd.Parameters.AddWithValue("@songuoi", txtSonguoi.Text);
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    for (int i = 0; i < gvTimPhong.SelectedRows.Count; i++)
+                    {
+                        DataGridViewRow row = gvTimPhong.SelectedRows[i];
+                        SqlCommand cmd2 = new SqlCommand("CTDatPhong", DataBase.GetConnection());
+                        cmd2.CommandType = CommandType.StoredProcedure;
+                        cmd2.Parameters.AddWithValue("@mapd", txtmapd.Text);
+                        cmd2.Parameters.AddWithValue("@maphong", row.Cells["Phòng"].Value.ToString());
+                        cmd2.ExecuteNonQuery();
+
+                        SqlCommand cmd3 = new SqlCommand("UpdateDatPhong", DataBase.GetConnection());
+                        cmd3.CommandType = CommandType.StoredProcedure;
+                        cmd3.Parameters.AddWithValue("@maphong", row.Cells["Phòng"].Value.ToString());
+                        cmd3.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("Thành công", "Đặt phòng", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmMain.LoadSDP();
+                }
+                catch (SqlException exc)
+                {
+                    if (exc.Number == 2627)
+                    {
+                        MessageBox.Show("Mã phiếu đặt đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi không xác định:\n" + exc.Message, "Lỗi" + exc.Number, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
         }
 
+        private void txtSonguoi_TextChanged(object sender, EventArgs e)
+        {
+            TimPhongTrong();
+            lsvChiTiet.Items[9].SubItems[1].Text = txtSonguoi.Text;
+        }
+
+        private void txtTiencoc_TextChanged(object sender, EventArgs e)
+        {
+            lsvChiTiet.Items[10].SubItems[1].Text = txtTiencoc.Text;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            lsvChiTiet.Items[7].SubItems[1].Text = dateTimePicker1.Value.ToShortDateString();
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            lsvChiTiet.Items[8].SubItems[1].Text = dateTimePicker2.Value.ToShortDateString();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (gvDatPhong.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = gvDatPhong.SelectedRows[0];
+                SqlCommand cmd1 = new SqlCommand("TimPhongN", DataBase.GetConnection());
+                cmd1.CommandType = CommandType.StoredProcedure;
+                cmd1.Parameters.AddWithValue("@maphieu", row.Cells["Mã phiếu"].Value.ToString());
+                SqlDataReader reader = cmd1.ExecuteReader();
+                try
+                {
+                    reader.Read();
+                }
+                catch { }
+                String maphong = (String)reader["maphong"];
+
+                SqlCommand cmd = new SqlCommand("NhanPhong", DataBase.GetConnection());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@maphong", maphong);
+                try
+                {
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Thành công", "Nhận phòng", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi", "Nhận phòng", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
     }
 }
