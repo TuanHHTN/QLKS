@@ -41,7 +41,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
-            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(120, 33);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
