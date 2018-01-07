@@ -82,6 +82,7 @@
             this.mnNguoidung.Name = "mnNguoidung";
             this.mnNguoidung.Size = new System.Drawing.Size(152, 22);
             this.mnNguoidung.Text = "Người dùng";
+            this.mnNguoidung.Click += new System.EventHandler(this.mnNguoidung_Click);
             // 
             // mnBaocao
             // 
