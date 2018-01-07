@@ -328,6 +328,7 @@
             this.mnKhachhang.Name = "mnKhachhang";
             this.mnKhachhang.Size = new System.Drawing.Size(154, 22);
             this.mnKhachhang.Text = "Khách hàng";
+            this.mnKhachhang.Click += new System.EventHandler(this.mnKhachhang_Click);
             // 
             // mnInhoadon
             // 

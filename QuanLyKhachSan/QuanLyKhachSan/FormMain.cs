@@ -20,6 +20,7 @@ namespace QuanLyKhachSan
         }
         public FormLogin frmLogin;
         public FormDoiMK frmDoiMK;
+        public FormKhachHang frmKH;
 
         public String musername = null;
         public String mfullname = null;
@@ -214,6 +215,13 @@ namespace QuanLyKhachSan
         private void mnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void mnKhachhang_Click(object sender, EventArgs e)
+        {
+            frmKH = new FormKhachHang();
+            frmKH.frmMain = this;
+            frmKH.ShowDialog();
         }
     }
 }
