@@ -280,6 +280,7 @@
             this.mnDangnhap.Name = "mnDangnhap";
             this.mnDangnhap.Size = new System.Drawing.Size(164, 22);
             this.mnDangnhap.Text = "Đăng nhập";
+            this.mnDangnhap.Click += new System.EventHandler(this.mnDangnhap_Click);
             // 
             // mnDangxuat
             // 
@@ -287,6 +288,7 @@
             this.mnDangxuat.Name = "mnDangxuat";
             this.mnDangxuat.Size = new System.Drawing.Size(164, 22);
             this.mnDangxuat.Text = "Đăng xuất";
+            this.mnDangxuat.Click += new System.EventHandler(this.mnDangxuat_Click);
             // 
             // toolStripSeparator1
             // 
@@ -298,6 +300,7 @@
             this.mnDoimatkhau.Name = "mnDoimatkhau";
             this.mnDoimatkhau.Size = new System.Drawing.Size(164, 22);
             this.mnDoimatkhau.Text = "Đổi mật khẩu";
+            this.mnDoimatkhau.Click += new System.EventHandler(this.mnDoimatkhau_Click);
             // 
             // toolStripSeparator2
             // 
@@ -309,6 +312,7 @@
             this.mnThoat.Name = "mnThoat";
             this.mnThoat.Size = new System.Drawing.Size(164, 22);
             this.mnThoat.Text = "Thoát";
+            this.mnThoat.Click += new System.EventHandler(this.mnThoat_Click);
             // 
             // mnKhachhang1
             // 
@@ -394,6 +398,7 @@
             this.Controls.Add(this.lblUser);
             this.Name = "FormMain";
             this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -16,5 +16,7 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+        public FormMain frmMain;
+        String fullname = "";
     }
 }
