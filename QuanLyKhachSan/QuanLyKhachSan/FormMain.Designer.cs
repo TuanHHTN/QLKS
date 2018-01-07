@@ -74,13 +74,13 @@
             // mnDichvu
             // 
             this.mnDichvu.Name = "mnDichvu";
-            this.mnDichvu.Size = new System.Drawing.Size(151, 22);
+            this.mnDichvu.Size = new System.Drawing.Size(152, 22);
             this.mnDichvu.Text = "Dịch vụ";
             // 
             // mnNguoidung
             // 
             this.mnNguoidung.Name = "mnNguoidung";
-            this.mnNguoidung.Size = new System.Drawing.Size(151, 22);
+            this.mnNguoidung.Size = new System.Drawing.Size(152, 22);
             this.mnNguoidung.Text = "Người dùng";
             // 
             // mnBaocao
@@ -128,7 +128,7 @@
             // mnNhanvien
             // 
             this.mnNhanvien.Name = "mnNhanvien";
-            this.mnNhanvien.Size = new System.Drawing.Size(151, 22);
+            this.mnNhanvien.Size = new System.Drawing.Size(152, 22);
             this.mnNhanvien.Text = "Nhân viên";
             // 
             // lbpt
@@ -223,7 +223,7 @@
             // mnVattu
             // 
             this.mnVattu.Name = "mnVattu";
-            this.mnVattu.Size = new System.Drawing.Size(151, 22);
+            this.mnVattu.Size = new System.Drawing.Size(152, 22);
             this.mnVattu.Text = "Vật tư";
             // 
             // groupBox1
@@ -374,8 +374,9 @@
             // mnPhong
             // 
             this.mnPhong.Name = "mnPhong";
-            this.mnPhong.Size = new System.Drawing.Size(151, 22);
+            this.mnPhong.Size = new System.Drawing.Size(152, 22);
             this.mnPhong.Text = "Phòng";
+            this.mnPhong.Click += new System.EventHandler(this.mnPhong_Click);
             // 
             // lblUser
             // 

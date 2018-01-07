@@ -240,5 +240,12 @@ namespace QuanLyKhachSan
             frmTP.frmMain = this;
             frmTP.ShowDialog();
         }
+
+        private void mnPhong_Click(object sender, EventArgs e)
+        {
+            frmP = new FormPhong();
+            frmP.frmMain = this;
+            frmP.ShowDialog();
+        }
     }
 }
