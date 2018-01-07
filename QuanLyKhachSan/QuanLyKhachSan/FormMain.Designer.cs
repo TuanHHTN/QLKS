@@ -151,7 +151,7 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.lvPhong);
-            this.groupBox2.Location = new System.Drawing.Point(300, 96);
+            this.groupBox2.Location = new System.Drawing.Point(273, 87);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
@@ -200,7 +200,7 @@
             this.lbllogo.AutoSize = true;
             this.lbllogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbllogo.ForeColor = System.Drawing.Color.Black;
-            this.lbllogo.Location = new System.Drawing.Point(457, 47);
+            this.lbllogo.Location = new System.Drawing.Point(419, 47);
             this.lbllogo.Name = "lbllogo";
             this.lbllogo.Size = new System.Drawing.Size(257, 33);
             this.lbllogo.TabIndex = 13;

@@ -65,7 +65,7 @@ namespace QuanLyKhachSan
                         fullname = (String)reader["fullname"];
                         frmMain.mfullname = fullname;
                         frmMain.mchucvu = (String)reader["chucvu"];
-                        frmMain.musername = (String)reader["username"];
+                        NewMethod(reader);
                         MessageBox.Show("Đăng nhập thành công!\nXin chào " + fullname, "Đăng nhập thành công!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Hide();
                     }
@@ -74,6 +74,11 @@ namespace QuanLyKhachSan
 
                 }
             }
+        }
+
+        private void NewMethod(SqlDataReader reader)
+        {
+            frmMain.musername = (String)reader["username"];
         }
 
         private void btnExit_Click(object sender, EventArgs e)
