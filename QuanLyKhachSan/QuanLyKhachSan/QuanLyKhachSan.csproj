@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
+    <Compile Include="FormCaoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaoThang.Designer.cs">
+      <DependentUpon>FormCaoThang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCaoThang.resx">
+      <DependentUpon>FormCaoThang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDatPhong.resx">
       <DependentUpon>FormDatPhong.cs</DependentUpon>
     </EmbeddedResource>

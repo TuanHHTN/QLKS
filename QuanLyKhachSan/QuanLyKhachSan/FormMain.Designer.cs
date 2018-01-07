@@ -89,6 +89,7 @@
             this.mnBaocao.Name = "mnBaocao";
             this.mnBaocao.Size = new System.Drawing.Size(76, 22);
             this.mnBaocao.Text = "Báo cáo";
+            this.mnBaocao.Click += new System.EventHandler(this.mnBaocao_Click);
             // 
             // mnTrogiup
             // 

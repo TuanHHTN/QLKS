@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    public partial class FormCaoThang : Form
+    public partial class FormBaoCaoThang : Form
     {
-        public FormCaoThang()
+        public FormBaoCaoThang()
         {
             InitializeComponent();
         }
+
+        public FormMain frmMain;
     }
 }
