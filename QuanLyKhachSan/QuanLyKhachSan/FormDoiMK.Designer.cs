@@ -142,6 +142,7 @@
             this.btnHuy.TabIndex = 12;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnXacnhan
             // 
@@ -152,6 +153,7 @@
             this.btnXacnhan.TabIndex = 11;
             this.btnXacnhan.Text = "Xác nhận";
             this.btnXacnhan.UseVisualStyleBackColor = true;
+            this.btnXacnhan.Click += new System.EventHandler(this.btnXacnhan_Click);
             // 
             // batloi
             // 
@@ -175,6 +177,7 @@
             this.Controls.Add(this.btnXacnhan);
             this.Name = "FormDoiMK";
             this.Text = "FormDoiMK";
+            this.Load += new System.EventHandler(this.FormDoiMK_Load);
             ((System.ComponentModel.ISupportInitialize)(this.batloi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
