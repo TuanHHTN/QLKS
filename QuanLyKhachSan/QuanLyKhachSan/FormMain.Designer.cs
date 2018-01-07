@@ -367,7 +367,7 @@
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblUser.Location = new System.Drawing.Point(32, 35);
+            this.lblUser.Location = new System.Drawing.Point(32, 47);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(43, 13);
             this.lblUser.TabIndex = 12;
