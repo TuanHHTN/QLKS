@@ -22,6 +22,7 @@ namespace QuanLyKhachSan
         public FormDoiMK frmDoiMK;
         public FormKhachHang frmKH;
 
+        public FormPhong frmP;
         public FormDatPhong frmDP;
         public FormThuePhong frmTP;
 
