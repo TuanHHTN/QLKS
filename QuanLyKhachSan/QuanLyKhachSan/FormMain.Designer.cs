@@ -357,6 +357,7 @@
             this.mnThuephong.Name = "mnThuephong";
             this.mnThuephong.Size = new System.Drawing.Size(154, 22);
             this.mnThuephong.Text = "Thuê phòng";
+            this.mnThuephong.Click += new System.EventHandler(this.mnThuephong_Click);
             // 
             // mnQuanly
             // 

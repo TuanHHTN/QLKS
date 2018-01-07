@@ -23,6 +23,7 @@ namespace QuanLyKhachSan
         public FormKhachHang frmKH;
 
         public FormDatPhong frmDP;
+        public FormThuePhong frmTP;
 
         public String musername = null;
         public String mfullname = null;
@@ -231,6 +232,13 @@ namespace QuanLyKhachSan
             frmDP = new FormDatPhong();
             frmDP.frmMain = this;
             frmDP.ShowDialog();
+        }
+
+        private void mnThuephong_Click(object sender, EventArgs e)
+        {
+            frmTP = new FormThuePhong();
+            frmTP.frmMain = this;
+            frmTP.ShowDialog();
         }
     }
 }
