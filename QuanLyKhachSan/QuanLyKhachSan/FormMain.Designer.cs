@@ -33,8 +33,6 @@
             this.mnDichvu = new System.Windows.Forms.ToolStripMenuItem();
             this.mnNguoidung = new System.Windows.Forms.ToolStripMenuItem();
             this.mnBaocao = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnTrogiup = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnThongtin = new System.Windows.Forms.ToolStripMenuItem();
             this.lbpdt = new System.Windows.Forms.Label();
             this.lbpd = new System.Windows.Forms.Label();
             this.mnNhanvien = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,20 +88,6 @@
             this.mnBaocao.Size = new System.Drawing.Size(76, 22);
             this.mnBaocao.Text = "Báo cáo";
             this.mnBaocao.Click += new System.EventHandler(this.mnBaocao_Click);
-            // 
-            // mnTrogiup
-            // 
-            this.mnTrogiup.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnThongtin});
-            this.mnTrogiup.Name = "mnTrogiup";
-            this.mnTrogiup.Size = new System.Drawing.Size(74, 22);
-            this.mnTrogiup.Text = "Trợ giúp";
-            // 
-            // mnThongtin
-            // 
-            this.mnThongtin.Name = "mnThongtin";
-            this.mnThongtin.Size = new System.Drawing.Size(137, 22);
-            this.mnThongtin.Text = "Thông tin";
             // 
             // lbpdt
             // 
@@ -255,8 +239,7 @@
             this.mnKhachhang1,
             this.mnDatphong1,
             this.mnQuanly,
-            this.mnBaocao,
-            this.mnTrogiup});
+            this.mnBaocao});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(883, 26);
@@ -420,8 +403,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnDichvu;
         private System.Windows.Forms.ToolStripMenuItem mnNguoidung;
         private System.Windows.Forms.ToolStripMenuItem mnBaocao;
-        private System.Windows.Forms.ToolStripMenuItem mnTrogiup;
-        private System.Windows.Forms.ToolStripMenuItem mnThongtin;
         private System.Windows.Forms.Label lbpdt;
         private System.Windows.Forms.Label lbpd;
         private System.Windows.Forms.ToolStripMenuItem mnNhanvien;
