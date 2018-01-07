@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QuanLyKhachSan
 {
@@ -16,5 +17,23 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+
+        public FormMain frmMain;
+
+        private void FormNguoiDung_Load(object sender, EventArgs e)
+        {
+            LoadDataUser();
+        }
+
+        private void LoadDataUser()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tbluser", DataBase.GetConnection());
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable tb = new DataTable();
+            adapter.Fill(tb);
+            dataGridView1.DataSource = tb;
+            dataGridView1.ClearSelection();
+        }
+
     }
 }

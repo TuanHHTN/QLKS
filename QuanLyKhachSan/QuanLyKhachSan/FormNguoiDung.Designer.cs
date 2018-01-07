@@ -197,6 +197,7 @@
             this.Controls.Add(this.label3);
             this.Name = "FormNguoiDung";
             this.Text = "FormNguoiDung";
+            this.Load += new System.EventHandler(this.FormNguoiDung_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
