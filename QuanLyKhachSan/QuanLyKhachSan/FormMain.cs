@@ -19,6 +19,7 @@ namespace QuanLyKhachSan
             InitializeComponent();
         }
         public FormLogin frmLogin;
+        public FormDoiMK frmDoiMK;
 
         public String musername = null;
         public String mfullname = null;
@@ -205,7 +206,9 @@ namespace QuanLyKhachSan
 
         private void mnDoimatkhau_Click(object sender, EventArgs e)
         {
-            
+            frmDoiMK = new FormDoiMK();
+            frmDoiMK.frmMain = this;
+            frmDoiMK.ShowDialog();
         }
 
         private void mnThoat_Click(object sender, EventArgs e)

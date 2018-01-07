@@ -66,6 +66,7 @@
             this.btnThem.TabIndex = 76;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -77,6 +78,7 @@
             this.btnXoa.TabIndex = 75;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -88,6 +90,7 @@
             this.btnSua.TabIndex = 74;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // groupBox1
             // 
@@ -333,6 +336,7 @@
             this.Controls.Add(this.gvKhachhang);
             this.Name = "FormKhachHang";
             this.Text = "FormKhachHang";
+            this.Load += new System.EventHandler(this.FormKhachHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvKhachhang)).EndInit();
