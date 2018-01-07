@@ -310,6 +310,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "FormPhong";
             this.Text = "FormPhong";
+            this.Load += new System.EventHandler(this.FormPhong_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvp)).EndInit();
